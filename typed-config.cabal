@@ -1,0 +1,33 @@
+Name:          typed-config
+Version:       0.1
+Cabal-Version: >= 1.6
+Synopsis:      Typed configuration files
+Description:
+
+  This Haskell library provides a typed interface to configuration
+  files. It translates configuration files as recognised by John
+  Goerzen's ConfigFile package into command line arguments parsed with
+  Neil Mitchell's cmdargs package.
+
+Category:      System, Configuration, Console, Parsing
+License:       BSD3
+License-File:  LICENSE
+Author:        Sebastian Fischer
+Maintainer:    Sebastian Fischer
+Bug-Reports:   http://github.com/sebfisch/typed-config/issues
+Homepage:      http://github.com/sebfisch/typed-config
+Build-Type:    Simple
+Stability:     experimental
+
+Extra-Source-Files: README
+
+Library
+  Build-Depends:    base >= 3 && < 5, 
+                    ConfigFile ==1.0.*, MissingH ==1.1.*,
+                    cmdargs >=0.1.9
+  Exposed-Modules:  System.Environment.TypedConfig
+  Ghc-Options:      -Wall
+
+Source-Repository head
+  type:     git
+  location: git://github.com/sebfisch/typed-config.git

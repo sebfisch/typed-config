@@ -1,0 +1,4 @@
+This Haskell library provides a typed interface to configuration
+files. It translates configuration files as recognised by John
+Goerzen's ConfigFile package into command line arguments parsed with
+Neil Mitchell's cmdargs package.
